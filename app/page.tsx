@@ -18,31 +18,31 @@ import {
 } from "lucide-react";
 
 const products = [
-  { id: 1, name: "White Garri", category: "Staples", price: 2800, unit: "4kg", emoji: "🌾", color: "#F4E5B9", image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=900&q=85" },
-  { id: 2, name: "Yellow Garri (Ijebu-style)", category: "Staples", price: 3200, unit: "4kg", emoji: "🌾", color: "#F0D89B", image: "https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=900&q=85" },
-  { id: 3, name: "Local Rice", category: "Staples", price: 7500, unit: "5kg", emoji: "🍚", color: "#F5E9CF", image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=900&q=85" },
-  { id: 4, name: "Brown Beans", category: "Staples", price: 3500, unit: "2kg", emoji: "🫘", color: "#F0DDC7", image: "https://images.unsplash.com/photo-1515543904379-3d757afe72e4?auto=format&fit=crop&w=900&q=85" },
-  { id: 5, name: "Yam Tubers", category: "Fresh Food", price: 4500, unit: "Per tuber", emoji: "🥔", color: "#E9D8BD", image: "https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=900&q=85" },
-  { id: 6, name: "Ripe Plantain", category: "Fresh Food", price: 2500, unit: "Bunch", emoji: "🍌", color: "#F5E6A8", image: "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=900&q=85" },
-  { id: 7, name: "Red Palm Oil", category: "Soup Ingredients", price: 4500, unit: "2 litres", emoji: "🫙", color: "#F5D8B7", image: "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=900&q=85" },
-  { id: 8, name: "Dried Crayfish", category: "Akwa Ibom Ingredients", price: 2500, unit: "500g", emoji: "🦐", color: "#F3D9C6", image: "https://images.unsplash.com/photo-1534483509719-35a7c1e5a2e?auto=format&fit=crop&w=900&q=85" },
-  { id: 9, name: "Smoked Fish", category: "Akwa Ibom Ingredients", price: 4000, unit: "Pack", emoji: "🐟", color: "#E7D5C3", image: "https://images.unsplash.com/photo-1510130387422-82bed34b37e9?auto=format&fit=crop&w=900&q=85" },
-  { id: 10, name: "Stockfish Pieces", category: "Akwa Ibom Ingredients", price: 3500, unit: "Pack", emoji: "🐟", color: "#E9DDC8", image: "https://images.unsplash.com/photo-1510130387422-82bed34b37e9?auto=format&fit=crop&w=900&q=85" },
-  { id: 11, name: "Periwinkle (Mfi)", category: "Akwa Ibom Ingredients", price: 2500, unit: "Pack", emoji: "🐚", color: "#E1E7D6", image: "https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=900&q=85" },
-  { id: 12, name: "Afang Leaves", category: "Soup Ingredients", price: 1500, unit: "Pack", emoji: "🥬", color: "#DCE8D3", image: "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85" },
-  { id: 13, name: "Waterleaf", category: "Soup Ingredients", price: 1000, unit: "Bunch", emoji: "🥬", color: "#D6E5CE", image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=900&q=85" },
-  { id: 14, name: "Editan Leaves", category: "Soup Ingredients", price: 1500, unit: "Pack", emoji: "🌿", color: "#DCE8D3", image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=900&q=85" },
-  { id: 15, name: "Atama Leaves", category: "Soup Ingredients", price: 1500, unit: "Pack", emoji: "🌿", color: "#DCE8D3", image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=900&q=85" },
-  { id: 16, name: "Egusi Seeds", category: "Soup Ingredients", price: 3500, unit: "1kg", emoji: "🥜", color: "#E5E5C8", image: "https://images.unsplash.com/photo-1505576399274-565b52d4ac71?auto=format&fit=crop&w=900&q=85" },
-  { id: 17, name: "Ogbono Seeds", category: "Soup Ingredients", price: 3000, unit: "500g", emoji: "🥜", color: "#E9D8BD", image: "https://images.unsplash.com/photo-1505576399274-565b52d4ac71?auto=format&fit=crop&w=900&q=85" },
-  { id: 18, name: "Cocoyam for Ekpang", category: "Akwa Ibom Ingredients", price: 2500, unit: "Pack", emoji: "🥔", color: "#E9D8BD", image: "https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=900&q=85" },
+  { id: 1, name: "White Garri", category: "Staples", price: 2800, unit: "4kg", emoji: "🌾", color: "#F4E5B9", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Basin%20of%20gari.jpg" },
+  { id: 2, name: "Yellow Garri (Ijebu-style)", category: "Staples", price: 3200, unit: "4kg", emoji: "🌾", color: "#F0D89B", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Home%20made%20yellow%20garri.jpg" },
+  { id: 3, name: "Local Rice", category: "Staples", price: 7500, unit: "5kg", emoji: "🍚", color: "#F5E9CF", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Different%20kinds%20of%20rice.jpg" },
+  { id: 4, name: "Brown Beans", category: "Staples", price: 3500, unit: "2kg", emoji: "🫘", color: "#F0DDC7", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Different%20kinds%20of%20beans.jpg" },
+  { id: 5, name: "Yam Tubers", category: "Fresh Food", price: 4500, unit: "Per tuber", emoji: "🥔", color: "#E9D8BD", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Different%20sizes%20of%20yams%20sale%20at%20the%20market.jpg" },
+  { id: 6, name: "Ripe Plantain", category: "Fresh Food", price: 2500, unit: "Bunch", emoji: "🍌", color: "#F5E6A8", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Bunch%20of%20plantain.jpg" },
+  { id: 7, name: "Red Palm Oil", category: "Soup Ingredients", price: 4500, unit: "2 litres", emoji: "🫙", color: "#F5D8B7", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Bottles%20of%20red%20oil.jpg" },
+  { id: 8, name: "Dried Crayfish", category: "Akwa Ibom Ingredients", price: 2500, unit: "500g", emoji: "🦐", color: "#F3D9C6", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Crayfish%2Ca%20good%20food%20ingredients.jpg" },
+  { id: 9, name: "Smoked Fish", category: "Akwa Ibom Ingredients", price: 4000, unit: "Pack", emoji: "🐟", color: "#E7D5C3", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Woman%20selling%20dried%20fish.jpg" },
+  { id: 10, name: "Stockfish Pieces", category: "Akwa Ibom Ingredients", price: 3500, unit: "Pack", emoji: "🐟", color: "#E9DDC8", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Woman%20buying%20stockfish.jpg" },
+  { id: 11, name: "Periwinkle (Mfi)", category: "Akwa Ibom Ingredients", price: 2500, unit: "Pack", emoji: "🐚", color: "#E1E7D6", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Bowl%20of%20Periwinkle.jpg" },
+  { id: 12, name: "Afang Leaves", category: "Soup Ingredients", price: 1500, unit: "Pack", emoji: "🥬", color: "#DCE8D3", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Afang%20leave.jpg" },
+  { id: 13, name: "Waterleaf", category: "Soup Ingredients", price: 1000, unit: "Bunch", emoji: "🥬", color: "#D6E5CE", image: "https://commons.wikimedia.org/wiki/Special:FilePath/A%20Water%20leaf%20farm.jpg" },
+  { id: 14, name: "Editan Leaves", category: "Soup Ingredients", price: 1500, unit: "Pack", emoji: "🌿", color: "#DCE8D3", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Afang%20and%20atama%20leave.jpg" },
+  { id: 15, name: "Atama Leaves", category: "Soup Ingredients", price: 1500, unit: "Pack", emoji: "🌿", color: "#DCE8D3", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Atama%20plant.jpg" },
+  { id: 16, name: "Egusi Seeds", category: "Soup Ingredients", price: 3500, unit: "1kg", emoji: "🥜", color: "#E5E5C8", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Different%20types%20of%20pepper.jpg" },
+  { id: 17, name: "Ogbono Seeds", category: "Soup Ingredients", price: 3000, unit: "500g", emoji: "🥜", color: "#E9D8BD", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Different%20kinds%20of%20beans.jpg" },
+  { id: 18, name: "Cocoyam for Ekpang", category: "Akwa Ibom Ingredients", price: 2500, unit: "Pack", emoji: "🥔", color: "#E9D8BD", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Cocoyam%20and%20water%20yam.jpg" },
 ];
 
 const combos = [
-  { name: "Afang Soup Ingredients Pack", description: "Afang leaves, waterleaf, crayfish, smoked fish and palm oil.", price: 10500, emoji: "🥬", color: "#DCE8D3", image: "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=85" },
-  { name: "Edikang Ikong Ingredients Pack", description: "Waterleaf, ugu, crayfish, stockfish and other soup essentials.", price: 12500, emoji: "🥣", color: "#E7E9D4", image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1000&q=85" },
-  { name: "Ekpang Nkukwo Ingredients Pack", description: "Cocoyam, cocoyam leaves, periwinkle, dried fish and palm oil.", price: 15000, emoji: "🧺", color: "#F1E4C9", image: "https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=1000&q=85" },
-  { name: "Atama Soup Ingredients Pack", description: "Atama leaves, palm fruit extract, periwinkle and smoked fish.", price: 12000, emoji: "🍲", color: "#F5E1C9", image: "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=1000&q=85" },
+  { name: "Afang Soup Ingredients Pack", description: "Afang leaves, waterleaf, crayfish, smoked fish and palm oil.", price: 10500, emoji: "🥬", color: "#DCE8D3", image: "https://img5.foodyas.com/202/130/471963142021306.jpg" },
+  { name: "Edikang Ikong Ingredients Pack", description: "Waterleaf, ugu, crayfish, stockfish and other soup essentials.", price: 12500, emoji: "🥣", color: "#E7E9D4", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Afang%20and%20atama%20leave.jpg" },
+  { name: "Ekpang Nkukwo Ingredients Pack", description: "Cocoyam, cocoyam leaves, periwinkle, dried fish and palm oil.", price: 15000, emoji: "🧺", color: "#F1E4C9", image: "https://commons.wikimedia.org/wiki/Special:FilePath/A%20plate%20of%20Ekpang%20(Nigerian%20local%20dish).jpg" },
+  { name: "Atama Soup Ingredients Pack", description: "Atama leaves, palm fruit extract, periwinkle and smoked fish.", price: 12000, emoji: "🍲", color: "#F5E1C9", image: "https://img5.foodyas.com/872/181/471624728721814.jpg" },
 ];
 
 const categories = ["All", "Staples", "Fresh Food", "Soup Ingredients", "Akwa Ibom Ingredients"];
@@ -197,7 +197,7 @@ export default function Home() {
         <div className="relative mx-auto w-full max-w-xl">
           <div className="absolute -right-2 top-5 h-32 w-32 rounded-full bg-[#e9c38e]/40 blur-2xl sm:-right-5" />
           <div className="relative overflow-hidden rounded-[2rem] bg-[#e9e5d7]">
-            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1400&q=90" alt="Fresh ingredients prepared for a Nigerian home-cooked meal" className="h-[420px] w-full object-cover sm:h-[520px]" />
+            <img src="https://img3.foodyas.com/205/495/471626662054954.jpg" alt="Fresh ingredients prepared for a Nigerian home-cooked meal" className="h-[420px] w-full object-cover sm:h-[520px]" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#102a1d]/85 via-transparent to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6 text-white sm:p-8">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#f1d1a4]">Rooted in local flavour</p>
