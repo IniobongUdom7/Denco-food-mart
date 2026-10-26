@@ -18,23 +18,34 @@ import {
 } from "lucide-react";
 
 const products = [
-  { id: 1, name: "Premium Long Grain Rice", category: "Grains", price: 6500, unit: "5kg", emoji: "🍚", color: "#F5E9CF" },
-  { id: 2, name: "Honey Beans", category: "Grains", price: 3200, unit: "2kg", emoji: "🫘", color: "#F0DDC7" },
-  { id: 3, name: "Yellow Garri", category: "Grains", price: 2800, unit: "4kg", emoji: "🌾", color: "#F4E5B9" },
-  { id: 4, name: "Red Palm Oil", category: "Oils", price: 4500, unit: "2 litres", emoji: "🫙", color: "#F5D8B7" },
-  { id: 5, name: "Tomato Paste", category: "Cooking Essentials", price: 1800, unit: "Pack", emoji: "🍅", color: "#F5D5C9" },
-  { id: 6, name: "Seasoning & Spices", category: "Cooking Essentials", price: 1500, unit: "Bundle", emoji: "🌶️", color: "#F5DFCA" },
-  { id: 7, name: "Dried Crayfish", category: "Soup Ingredients", price: 2500, unit: "500g", emoji: "🦐", color: "#F3D9C6" },
-  { id: 8, name: "Egusi Seeds", category: "Soup Ingredients", price: 3500, unit: "1kg", emoji: "🥜", color: "#E5E5C8" },
+  { id: 1, name: "White Garri", category: "Staples", price: 2800, unit: "4kg", emoji: "🌾", color: "#F4E5B9" },
+  { id: 2, name: "Yellow Garri (Ijebu-style)", category: "Staples", price: 3200, unit: "4kg", emoji: "🌾", color: "#F0D89B" },
+  { id: 3, name: "Local Rice", category: "Staples", price: 7500, unit: "5kg", emoji: "🍚", color: "#F5E9CF" },
+  { id: 4, name: "Brown Beans", category: "Staples", price: 3500, unit: "2kg", emoji: "🫘", color: "#F0DDC7" },
+  { id: 5, name: "Yam Tubers", category: "Fresh Food", price: 4500, unit: "Per tuber", emoji: "🥔", color: "#E9D8BD" },
+  { id: 6, name: "Ripe Plantain", category: "Fresh Food", price: 2500, unit: "Bunch", emoji: "🍌", color: "#F5E6A8" },
+  { id: 7, name: "Red Palm Oil", category: "Soup Ingredients", price: 4500, unit: "2 litres", emoji: "🫙", color: "#F5D8B7" },
+  { id: 8, name: "Dried Crayfish", category: "Akwa Ibom Ingredients", price: 2500, unit: "500g", emoji: "🦐", color: "#F3D9C6" },
+  { id: 9, name: "Smoked Fish", category: "Akwa Ibom Ingredients", price: 4000, unit: "Pack", emoji: "🐟", color: "#E7D5C3" },
+  { id: 10, name: "Stockfish Pieces", category: "Akwa Ibom Ingredients", price: 3500, unit: "Pack", emoji: "🐟", color: "#E9DDC8" },
+  { id: 11, name: "Periwinkle (Mfi)", category: "Akwa Ibom Ingredients", price: 2500, unit: "Pack", emoji: "🐚", color: "#E1E7D6" },
+  { id: 12, name: "Afang Leaves", category: "Soup Ingredients", price: 1500, unit: "Pack", emoji: "🥬", color: "#DCE8D3" },
+  { id: 13, name: "Waterleaf", category: "Soup Ingredients", price: 1000, unit: "Bunch", emoji: "🥬", color: "#D6E5CE" },
+  { id: 14, name: "Editan Leaves", category: "Soup Ingredients", price: 1500, unit: "Pack", emoji: "🌿", color: "#DCE8D3" },
+  { id: 15, name: "Atama Leaves", category: "Soup Ingredients", price: 1500, unit: "Pack", emoji: "🌿", color: "#DCE8D3" },
+  { id: 16, name: "Egusi Seeds", category: "Soup Ingredients", price: 3500, unit: "1kg", emoji: "🥜", color: "#E5E5C8" },
+  { id: 17, name: "Ogbono Seeds", category: "Soup Ingredients", price: 3000, unit: "500g", emoji: "🥜", color: "#E9D8BD" },
+  { id: 18, name: "Cocoyam for Ekpang", category: "Akwa Ibom Ingredients", price: 2500, unit: "Pack", emoji: "🥔", color: "#E9D8BD" },
 ];
 
 const combos = [
-  { name: "Jollof Rice Combo", description: "Rice, tomato paste, oil and seasoning.", price: 12500, emoji: "🍲", color: "#F5E1C9" },
-  { name: "Soup Lovers Combo", description: "Garri, palm oil and soup ingredients.", price: 10500, emoji: "🥣", color: "#E7E9D4" },
-  { name: "Family Foodstuff Pack", description: "Everyday staples for your household.", price: 18500, emoji: "🧺", color: "#F1E4C9" },
+  { name: "Afang Soup Ingredients Pack", description: "Afang leaves, waterleaf, crayfish, smoked fish and palm oil.", price: 10500, emoji: "🥬", color: "#DCE8D3" },
+  { name: "Edikang Ikong Ingredients Pack", description: "Waterleaf, ugu, crayfish, stockfish and other soup essentials.", price: 12500, emoji: "🥣", color: "#E7E9D4" },
+  { name: "Ekpang Nkukwo Ingredients Pack", description: "Cocoyam, cocoyam leaves, periwinkle, dried fish and palm oil.", price: 15000, emoji: "🧺", color: "#F1E4C9" },
+  { name: "Atama Soup Ingredients Pack", description: "Atama leaves, palm fruit extract, periwinkle and smoked fish.", price: 12000, emoji: "🍲", color: "#F5E1C9" },
 ];
 
-const categories = ["All", "Grains", "Oils", "Cooking Essentials", "Soup Ingredients"];
+const categories = ["All", "Staples", "Fresh Food", "Soup Ingredients", "Akwa Ibom Ingredients"];
 const money = (n: number) =>
   new Intl.NumberFormat("en-NG", {
     style: "currency",
@@ -163,13 +174,13 @@ export default function Home() {
       <section className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-12 sm:px-6 sm:py-16 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:py-20">
         <div>
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#d8dfcf] bg-[#eff2e9] px-4 py-2 text-xs font-bold uppercase tracking-[0.13em] text-[#416747]">
-            <Leaf size={15} /> Your everyday food market
+            <Leaf size={15} /> Nigerian & Akwa Ibom food market
           </div>
           <h1 className="max-w-2xl text-4xl font-black leading-[1.08] tracking-tight sm:text-5xl lg:text-7xl">
             Good food.<br />Better living.<br /><span className="text-[#b86c35]">Made simpler.</span>
           </h1>
           <p className="mt-6 max-w-lg text-base leading-7 text-[#6d776c] sm:text-lg">
-            Shop everyday Nigerian foodstuff and thoughtfully arranged food bundles in one convenient place.
+            Shop Nigerian staples and ingredients for beloved Akwa Ibom dishes, including Afang, Edikang Ikong, Ekpang Nkukwo and Atama soup.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href="#products" className="inline-flex items-center gap-3 rounded-full bg-[#234d37] px-7 py-4 text-sm font-bold text-white transition hover:bg-[#173624]">
@@ -189,16 +200,16 @@ export default function Home() {
             <div className="absolute inset-0 opacity-40" style={{ backgroundImage: "radial-gradient(#a8b49b 1px, transparent 1px)", backgroundSize: "18px 18px" }} />
             <div className="relative grid grid-cols-2 gap-3 sm:gap-4">
               <div className="flex min-h-44 flex-col justify-between rounded-3xl bg-[#f7edda] p-5 sm:min-h-52">
-                <span className="text-5xl sm:text-6xl">🍚</span><span className="text-sm font-extrabold">Kitchen staples</span>
+                <span className="text-5xl sm:text-6xl">🍚</span><span className="text-sm font-extrabold">Nigerian staples</span>
               </div>
               <div className="mt-7 flex min-h-44 flex-col justify-between rounded-3xl bg-[#dce5d4] p-5 sm:min-h-52">
-                <span className="text-5xl sm:text-6xl">🌶️</span><span className="text-sm font-extrabold">Flavour essentials</span>
+                <span className="text-5xl sm:text-6xl">🌶️</span><span className="text-sm font-extrabold">Soup ingredients</span>
               </div>
               <div className="flex min-h-36 flex-col justify-between rounded-3xl bg-[#e9d1bb] p-5 sm:min-h-44">
-                <span className="text-5xl sm:text-6xl">🫘</span><span className="text-sm font-extrabold">Grains & beans</span>
+                <span className="text-5xl sm:text-6xl">🫘</span><span className="text-sm font-extrabold">Garri & beans</span>
               </div>
               <div className="mt-[-1.25rem] flex min-h-36 flex-col justify-between rounded-3xl bg-[#f6f0df] p-5 sm:min-h-44">
-                <span className="text-5xl sm:text-6xl">🧺</span><span className="text-sm font-extrabold">Family food packs</span>
+                <span className="text-5xl sm:text-6xl">🧺</span><span className="text-sm font-extrabold">Akwa Ibom food packs</span>
               </div>
             </div>
             <div className="relative mt-5 rounded-2xl bg-[#234d37] px-5 py-4 text-white">
@@ -226,7 +237,7 @@ export default function Home() {
 
       <section id="products" className="mx-auto max-w-7xl scroll-mt-24 px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
-          <div><p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#b86c35]">Shop the essentials</p><h2 className="mt-3 text-3xl font-black tracking-tight sm:text-4xl">Your kitchen favourites</h2><p className="mt-3 text-sm text-[#788276] sm:text-base">Everyday ingredients for meals everyone loves.</p></div>
+          <div><p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#b86c35]">Shop the essentials</p><h2 className="mt-3 text-3xl font-black tracking-tight sm:text-4xl">Your kitchen favourites</h2><p className="mt-3 text-sm text-[#788276] sm:text-base">Nigerian staples and ingredients for local favourites.</p></div>
           <div className="relative w-full sm:max-w-xs">
             <Search size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-[#8b9487]" />
             <input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search foodstuff..." className="w-full rounded-full border border-[#deded2] bg-white py-3.5 pl-11 pr-4 text-sm outline-none transition focus:border-[#47764d]" />
@@ -256,14 +267,14 @@ export default function Home() {
           ))}
         </div>
         {filtered.length === 0 && <p className="py-12 text-center text-sm text-[#788276]">No matching products. Try another search.</p>}
-        <p className="mt-5 text-xs text-[#8a9185]">Demo catalogue: product names, pack sizes and prices must be confirmed before the store goes live.</p>
+        <p className="mt-5 text-xs text-[#8a9185]">Illustrative catalogue and prices only. Confirm availability, pack sizes and current prices with Denco Food Mart.</p>
       </section>
 
       <section id="combos" className="scroll-mt-24 bg-[#edf0e7]">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
           <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
-            <div><p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#b86c35]">Less planning, more cooking</p><h2 className="mt-3 text-3xl font-black tracking-tight sm:text-4xl">Foodstuff bundles</h2><p className="mt-3 max-w-xl text-sm leading-6 text-[#6d776c] sm:text-base">Handy combinations of everyday ingredients to make shopping simpler.</p></div>
-            <span className="w-fit rounded-full border border-[#d2dacb] px-4 py-2 text-xs font-bold text-[#4c684b]">3 demo bundles</span>
+            <div><p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#b86c35]">Less planning, more cooking</p><h2 className="mt-3 text-3xl font-black tracking-tight sm:text-4xl">Foodstuff bundles</h2><p className="mt-3 max-w-xl text-sm leading-6 text-[#6d776c] sm:text-base">Ingredient packs inspired by Akwa Ibom favourites. Check pack contents with the store before ordering.</p></div>
+            <span className="w-fit rounded-full border border-[#d2dacb] px-4 py-2 text-xs font-bold text-[#4c684b]">4 local food packs</span>
           </div>
           <div className="mt-9 grid gap-5 md:grid-cols-3">
             {combos.map((combo) => (
@@ -277,7 +288,7 @@ export default function Home() {
               </article>
             ))}
           </div>
-          <p className="mt-5 text-xs text-[#788276]">Bundle contents, quantities and prices are illustrative until confirmed by Denco Food Mart.</p>
+          <p className="mt-5 text-xs text-[#788276]">Akwa Ibom-inspired bundle suggestions. Confirm ingredients, quantities and current prices with Denco Food Mart.</p>
         </div>
       </section>
 
