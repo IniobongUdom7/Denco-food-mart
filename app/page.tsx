@@ -194,7 +194,7 @@ export default function Home() {
         <div className="relative mx-auto w-full max-w-xl">
           <div className="absolute -right-2 top-5 h-32 w-32 rounded-full bg-[#e9c38e]/40 blur-2xl sm:-right-5" />
           <div className="relative overflow-hidden rounded-[2rem] bg-[#e9e5d7]">
-            <img src="https://img3.foodyas.com/205/495/471626662054954.jpg" alt="Fresh ingredients prepared for a Nigerian home-cooked meal" className="h-[420px] w-full object-cover sm:h-[520px]" />
+            <img src="https://img3.foodyas.com/205/495/471626662054954.jpg" alt="Fresh ingredients prepared for a Nigerian home-cooked meal" onError={(e) => { e.currentTarget.style.display = "none"; }} className="h-[420px] w-full object-cover sm:h-[520px]" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#102a1d]/85 via-transparent to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6 text-white sm:p-8">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#f1d1a4]">Rooted in local flavour</p>
@@ -236,7 +236,7 @@ export default function Home() {
           {filtered.map((p) => (
             <article key={p.id} className="group overflow-hidden rounded-3xl border border-[#e9e6dc] bg-white transition hover:-translate-y-1 hover:shadow-lg">
               <div className="relative aspect-square overflow-hidden bg-[#edf0e7]">
-                <img src={p.image} alt={p.name} loading="lazy" className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+                <img src={p.image} alt={p.name} loading="lazy" onError={(e) => { e.currentTarget.style.display = "none"; }} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
                 <span className="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-[10px] font-bold text-[#20382b] shadow-sm sm:text-xs">{p.category}</span>
               </div>
               <div className="p-3 sm:p-5">
@@ -263,7 +263,7 @@ export default function Home() {
           <div className="mt-9 grid gap-5 md:grid-cols-3">
             {combos.map((combo) => (
               <article key={combo.name} className="overflow-hidden rounded-3xl border border-[#e0e4d8] bg-[#faf9f5]">
-                <div className="h-44 overflow-hidden bg-[#e7e9d4]"><img src={combo.image} alt={combo.name} loading="lazy" className="h-full w-full object-cover transition duration-500 hover:scale-105" /></div>
+                <div className="h-44 overflow-hidden bg-[#e7e9d4]"><img src={combo.image} alt={combo.name} loading="lazy" onError={(e) => { e.currentTarget.style.display = "none"; }} className="h-full w-full object-cover transition duration-500 hover:scale-105" /></div>
                 <div className="p-6">
                   <h3 className="text-xl font-black">{combo.name}</h3>
                   <p className="mt-2 min-h-12 text-sm leading-6 text-[#788276]">{combo.description}</p>
