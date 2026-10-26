@@ -18,31 +18,31 @@ import {
 } from "lucide-react";
 
 const products = [
-  { id: 1, name: "White Garri", category: "Staples", price: 2800, unit: "4kg", emoji: "🌾", color: "#F4E5B9" },
-  { id: 2, name: "Yellow Garri (Ijebu-style)", category: "Staples", price: 3200, unit: "4kg", emoji: "🌾", color: "#F0D89B" },
-  { id: 3, name: "Local Rice", category: "Staples", price: 7500, unit: "5kg", emoji: "🍚", color: "#F5E9CF" },
-  { id: 4, name: "Brown Beans", category: "Staples", price: 3500, unit: "2kg", emoji: "🫘", color: "#F0DDC7" },
-  { id: 5, name: "Yam Tubers", category: "Fresh Food", price: 4500, unit: "Per tuber", emoji: "🥔", color: "#E9D8BD" },
-  { id: 6, name: "Ripe Plantain", category: "Fresh Food", price: 2500, unit: "Bunch", emoji: "🍌", color: "#F5E6A8" },
-  { id: 7, name: "Red Palm Oil", category: "Soup Ingredients", price: 4500, unit: "2 litres", emoji: "🫙", color: "#F5D8B7" },
-  { id: 8, name: "Dried Crayfish", category: "Akwa Ibom Ingredients", price: 2500, unit: "500g", emoji: "🦐", color: "#F3D9C6" },
-  { id: 9, name: "Smoked Fish", category: "Akwa Ibom Ingredients", price: 4000, unit: "Pack", emoji: "🐟", color: "#E7D5C3" },
-  { id: 10, name: "Stockfish Pieces", category: "Akwa Ibom Ingredients", price: 3500, unit: "Pack", emoji: "🐟", color: "#E9DDC8" },
-  { id: 11, name: "Periwinkle (Mfi)", category: "Akwa Ibom Ingredients", price: 2500, unit: "Pack", emoji: "🐚", color: "#E1E7D6" },
-  { id: 12, name: "Afang Leaves", category: "Soup Ingredients", price: 1500, unit: "Pack", emoji: "🥬", color: "#DCE8D3" },
-  { id: 13, name: "Waterleaf", category: "Soup Ingredients", price: 1000, unit: "Bunch", emoji: "🥬", color: "#D6E5CE" },
-  { id: 14, name: "Editan Leaves", category: "Soup Ingredients", price: 1500, unit: "Pack", emoji: "🌿", color: "#DCE8D3" },
-  { id: 15, name: "Atama Leaves", category: "Soup Ingredients", price: 1500, unit: "Pack", emoji: "🌿", color: "#DCE8D3" },
-  { id: 16, name: "Egusi Seeds", category: "Soup Ingredients", price: 3500, unit: "1kg", emoji: "🥜", color: "#E5E5C8" },
-  { id: 17, name: "Ogbono Seeds", category: "Soup Ingredients", price: 3000, unit: "500g", emoji: "🥜", color: "#E9D8BD" },
-  { id: 18, name: "Cocoyam for Ekpang", category: "Akwa Ibom Ingredients", price: 2500, unit: "Pack", emoji: "🥔", color: "#E9D8BD" },
+  { id: 1, name: "White Garri", category: "Staples", price: 2800, unit: "4kg", emoji: "🌾", color: "#F4E5B9", image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=900&q=85" },
+  { id: 2, name: "Yellow Garri (Ijebu-style)", category: "Staples", price: 3200, unit: "4kg", emoji: "🌾", color: "#F0D89B", image: "https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=900&q=85" },
+  { id: 3, name: "Local Rice", category: "Staples", price: 7500, unit: "5kg", emoji: "🍚", color: "#F5E9CF", image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=900&q=85" },
+  { id: 4, name: "Brown Beans", category: "Staples", price: 3500, unit: "2kg", emoji: "🫘", color: "#F0DDC7", image: "https://images.unsplash.com/photo-1515543904379-3d757afe72e4?auto=format&fit=crop&w=900&q=85" },
+  { id: 5, name: "Yam Tubers", category: "Fresh Food", price: 4500, unit: "Per tuber", emoji: "🥔", color: "#E9D8BD", image: "https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=900&q=85" },
+  { id: 6, name: "Ripe Plantain", category: "Fresh Food", price: 2500, unit: "Bunch", emoji: "🍌", color: "#F5E6A8", image: "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=900&q=85" },
+  { id: 7, name: "Red Palm Oil", category: "Soup Ingredients", price: 4500, unit: "2 litres", emoji: "🫙", color: "#F5D8B7", image: "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=900&q=85" },
+  { id: 8, name: "Dried Crayfish", category: "Akwa Ibom Ingredients", price: 2500, unit: "500g", emoji: "🦐", color: "#F3D9C6", image: "https://images.unsplash.com/photo-1534483509719-35a7c1e5a2e?auto=format&fit=crop&w=900&q=85" },
+  { id: 9, name: "Smoked Fish", category: "Akwa Ibom Ingredients", price: 4000, unit: "Pack", emoji: "🐟", color: "#E7D5C3", image: "https://images.unsplash.com/photo-1510130387422-82bed34b37e9?auto=format&fit=crop&w=900&q=85" },
+  { id: 10, name: "Stockfish Pieces", category: "Akwa Ibom Ingredients", price: 3500, unit: "Pack", emoji: "🐟", color: "#E9DDC8", image: "https://images.unsplash.com/photo-1510130387422-82bed34b37e9?auto=format&fit=crop&w=900&q=85" },
+  { id: 11, name: "Periwinkle (Mfi)", category: "Akwa Ibom Ingredients", price: 2500, unit: "Pack", emoji: "🐚", color: "#E1E7D6", image: "https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=900&q=85" },
+  { id: 12, name: "Afang Leaves", category: "Soup Ingredients", price: 1500, unit: "Pack", emoji: "🥬", color: "#DCE8D3", image: "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85" },
+  { id: 13, name: "Waterleaf", category: "Soup Ingredients", price: 1000, unit: "Bunch", emoji: "🥬", color: "#D6E5CE", image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=900&q=85" },
+  { id: 14, name: "Editan Leaves", category: "Soup Ingredients", price: 1500, unit: "Pack", emoji: "🌿", color: "#DCE8D3", image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=900&q=85" },
+  { id: 15, name: "Atama Leaves", category: "Soup Ingredients", price: 1500, unit: "Pack", emoji: "🌿", color: "#DCE8D3", image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=900&q=85" },
+  { id: 16, name: "Egusi Seeds", category: "Soup Ingredients", price: 3500, unit: "1kg", emoji: "🥜", color: "#E5E5C8", image: "https://images.unsplash.com/photo-1505576399274-565b52d4ac71?auto=format&fit=crop&w=900&q=85" },
+  { id: 17, name: "Ogbono Seeds", category: "Soup Ingredients", price: 3000, unit: "500g", emoji: "🥜", color: "#E9D8BD", image: "https://images.unsplash.com/photo-1505576399274-565b52d4ac71?auto=format&fit=crop&w=900&q=85" },
+  { id: 18, name: "Cocoyam for Ekpang", category: "Akwa Ibom Ingredients", price: 2500, unit: "Pack", emoji: "🥔", color: "#E9D8BD", image: "https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=900&q=85" },
 ];
 
 const combos = [
-  { name: "Afang Soup Ingredients Pack", description: "Afang leaves, waterleaf, crayfish, smoked fish and palm oil.", price: 10500, emoji: "🥬", color: "#DCE8D3" },
-  { name: "Edikang Ikong Ingredients Pack", description: "Waterleaf, ugu, crayfish, stockfish and other soup essentials.", price: 12500, emoji: "🥣", color: "#E7E9D4" },
-  { name: "Ekpang Nkukwo Ingredients Pack", description: "Cocoyam, cocoyam leaves, periwinkle, dried fish and palm oil.", price: 15000, emoji: "🧺", color: "#F1E4C9" },
-  { name: "Atama Soup Ingredients Pack", description: "Atama leaves, palm fruit extract, periwinkle and smoked fish.", price: 12000, emoji: "🍲", color: "#F5E1C9" },
+  { name: "Afang Soup Ingredients Pack", description: "Afang leaves, waterleaf, crayfish, smoked fish and palm oil.", price: 10500, emoji: "🥬", color: "#DCE8D3", image: "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=85" },
+  { name: "Edikang Ikong Ingredients Pack", description: "Waterleaf, ugu, crayfish, stockfish and other soup essentials.", price: 12500, emoji: "🥣", color: "#E7E9D4", image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1000&q=85" },
+  { name: "Ekpang Nkukwo Ingredients Pack", description: "Cocoyam, cocoyam leaves, periwinkle, dried fish and palm oil.", price: 15000, emoji: "🧺", color: "#F1E4C9", image: "https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=1000&q=85" },
+  { name: "Atama Soup Ingredients Pack", description: "Atama leaves, palm fruit extract, periwinkle and smoked fish.", price: 12000, emoji: "🍲", color: "#F5E1C9", image: "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=1000&q=85" },
 ];
 
 const categories = ["All", "Staples", "Fresh Food", "Soup Ingredients", "Akwa Ibom Ingredients"];
@@ -196,25 +196,12 @@ export default function Home() {
 
         <div className="relative mx-auto w-full max-w-xl">
           <div className="absolute -right-2 top-5 h-32 w-32 rounded-full bg-[#e9c38e]/40 blur-2xl sm:-right-5" />
-          <div className="relative overflow-hidden rounded-[2rem] bg-[#e9e5d7] p-5 sm:p-8">
-            <div className="absolute inset-0 opacity-40" style={{ backgroundImage: "radial-gradient(#a8b49b 1px, transparent 1px)", backgroundSize: "18px 18px" }} />
-            <div className="relative grid grid-cols-2 gap-3 sm:gap-4">
-              <div className="flex min-h-44 flex-col justify-between rounded-3xl bg-[#f7edda] p-5 sm:min-h-52">
-                <span className="text-5xl sm:text-6xl">🍚</span><span className="text-sm font-extrabold">Nigerian staples</span>
-              </div>
-              <div className="mt-7 flex min-h-44 flex-col justify-between rounded-3xl bg-[#dce5d4] p-5 sm:min-h-52">
-                <span className="text-5xl sm:text-6xl">🌶️</span><span className="text-sm font-extrabold">Soup ingredients</span>
-              </div>
-              <div className="flex min-h-36 flex-col justify-between rounded-3xl bg-[#e9d1bb] p-5 sm:min-h-44">
-                <span className="text-5xl sm:text-6xl">🫘</span><span className="text-sm font-extrabold">Garri & beans</span>
-              </div>
-              <div className="mt-[-1.25rem] flex min-h-36 flex-col justify-between rounded-3xl bg-[#f6f0df] p-5 sm:min-h-44">
-                <span className="text-5xl sm:text-6xl">🧺</span><span className="text-sm font-extrabold">Akwa Ibom food packs</span>
-              </div>
-            </div>
-            <div className="relative mt-5 rounded-2xl bg-[#234d37] px-5 py-4 text-white">
-              <p className="text-xs font-medium text-white/70">YOUR KITCHEN, OUR PRIORITY</p>
-              <p className="mt-1 text-lg font-extrabold">Stock up without the stress.</p>
+          <div className="relative overflow-hidden rounded-[2rem] bg-[#e9e5d7]">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1400&q=90" alt="Fresh ingredients prepared for a Nigerian home-cooked meal" className="h-[420px] w-full object-cover sm:h-[520px]" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#102a1d]/85 via-transparent to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-6 text-white sm:p-8">
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#f1d1a4]">Rooted in local flavour</p>
+              <p className="mt-2 text-2xl font-black sm:text-3xl">From everyday staples to Akwa Ibom favourites.</p>
             </div>
           </div>
         </div>
@@ -251,9 +238,9 @@ export default function Home() {
         <div className="mt-7 grid grid-cols-2 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
           {filtered.map((p) => (
             <article key={p.id} className="group overflow-hidden rounded-3xl border border-[#e9e6dc] bg-white transition hover:-translate-y-1 hover:shadow-lg">
-              <div className="relative flex aspect-square items-center justify-center" style={{ backgroundColor: p.color }}>
-                <span className="text-7xl transition duration-300 group-hover:scale-110 sm:text-8xl">{p.emoji}</span>
-                <span className="absolute left-3 top-3 rounded-full bg-white/85 px-3 py-1 text-[10px] font-bold text-[#50604e] sm:text-xs">{p.category}</span>
+              <div className="relative aspect-square overflow-hidden bg-[#edf0e7]">
+                <img src={p.image} alt={p.name} loading="lazy" className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+                <span className="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-[10px] font-bold text-[#20382b] shadow-sm sm:text-xs">{p.category}</span>
               </div>
               <div className="p-3 sm:p-5">
                 <p className="text-xs text-[#8a9185]">{p.unit}</p>
@@ -279,7 +266,7 @@ export default function Home() {
           <div className="mt-9 grid gap-5 md:grid-cols-3">
             {combos.map((combo) => (
               <article key={combo.name} className="overflow-hidden rounded-3xl border border-[#e0e4d8] bg-[#faf9f5]">
-                <div className="flex h-44 items-center justify-center" style={{ backgroundColor: combo.color }}><span className="text-8xl">{combo.emoji}</span></div>
+                <div className="h-44 overflow-hidden bg-[#e7e9d4]"><img src={combo.image} alt={combo.name} loading="lazy" className="h-full w-full object-cover transition duration-500 hover:scale-105" /></div>
                 <div className="p-6">
                   <h3 className="text-xl font-black">{combo.name}</h3>
                   <p className="mt-2 min-h-12 text-sm leading-6 text-[#788276]">{combo.description}</p>
