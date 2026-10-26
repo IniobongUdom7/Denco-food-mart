@@ -173,9 +173,6 @@ export default function Home() {
 
       <section className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-12 sm:px-6 sm:py-16 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:py-20">
         <div>
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#d8dfcf] bg-[#eff2e9] px-4 py-2 text-xs font-bold uppercase tracking-[0.13em] text-[#416747]">
-            <Leaf size={15} /> Nigerian & Akwa Ibom food market
-          </div>
           <h1 className="max-w-2xl text-4xl font-black leading-[1.08] tracking-tight sm:text-5xl lg:text-7xl">
             Good food.<br />Better living.<br /><span className="text-[#b86c35]">Made simpler.</span>
           </h1>
